@@ -8,20 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		965F12231D090802006B344D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965F12221D090802006B344D /* AppDelegate.swift */; };
-		965F12251D090802006B344D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965F12241D090802006B344D /* ViewController.swift */; };
-		965F12281D090802006B344D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 965F12261D090802006B344D /* Main.storyboard */; };
 		965F122A1D090802006B344D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 965F12291D090802006B344D /* Assets.xcassets */; };
 		965F122D1D090802006B344D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 965F122B1D090802006B344D /* LaunchScreen.storyboard */; };
+		965F12431D090A71006B344D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 965F12421D090A71006B344D /* Main.storyboard */; };
+		965F12451D090A77006B344D /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965F12441D090A77006B344D /* HomeVC.swift */; };
+		965F12471D090A7F006B344D /* FeedTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965F12461D090A7F006B344D /* FeedTable.swift */; };
+		965F12491D090A84006B344D /* DisplayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965F12481D090A84006B344D /* DisplayCell.swift */; };
+		965F124B1D090A8B006B344D /* CustomiseTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965F124A1D090A8B006B344D /* CustomiseTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		965F121F1D090802006B344D /* SimpleLogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleLogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		965F12221D090802006B344D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		965F12241D090802006B344D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		965F12271D090802006B344D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		965F12291D090802006B344D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		965F122C1D090802006B344D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		965F122E1D090802006B344D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		965F12421D090A71006B344D /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		965F12441D090A77006B344D /* HomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		965F12461D090A7F006B344D /* FeedTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedTable.swift; sourceTree = "<group>"; };
+		965F12481D090A84006B344D /* DisplayCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplayCell.swift; sourceTree = "<group>"; };
+		965F124A1D090A8B006B344D /* CustomiseTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomiseTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,10 +61,13 @@
 			isa = PBXGroup;
 			children = (
 				965F12221D090802006B344D /* AppDelegate.swift */,
-				965F12241D090802006B344D /* ViewController.swift */,
-				965F12261D090802006B344D /* Main.storyboard */,
 				965F12291D090802006B344D /* Assets.xcassets */,
 				965F122B1D090802006B344D /* LaunchScreen.storyboard */,
+				965F12421D090A71006B344D /* Main.storyboard */,
+				965F12461D090A7F006B344D /* FeedTable.swift */,
+				965F12441D090A77006B344D /* HomeVC.swift */,
+				965F12481D090A84006B344D /* DisplayCell.swift */,
+				965F124A1D090A8B006B344D /* CustomiseTextField.swift */,
 				965F122E1D090802006B344D /* Info.plist */,
 			);
 			path = SimpleLogin;
@@ -122,9 +131,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				965F12431D090A71006B344D /* Main.storyboard in Resources */,
 				965F122D1D090802006B344D /* LaunchScreen.storyboard in Resources */,
 				965F122A1D090802006B344D /* Assets.xcassets in Resources */,
-				965F12281D090802006B344D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,22 +144,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				965F12251D090802006B344D /* ViewController.swift in Sources */,
 				965F12231D090802006B344D /* AppDelegate.swift in Sources */,
+				965F12471D090A7F006B344D /* FeedTable.swift in Sources */,
+				965F124B1D090A8B006B344D /* CustomiseTextField.swift in Sources */,
+				965F12491D090A84006B344D /* DisplayCell.swift in Sources */,
+				965F12451D090A77006B344D /* HomeVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		965F12261D090802006B344D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				965F12271D090802006B344D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		965F122B1D090802006B344D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -286,6 +290,7 @@
 				965F12331D090802006B344D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
